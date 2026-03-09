@@ -1,11 +1,12 @@
 from nicegui import ui
 from leaderboard import build_leaderboard
 from history import weekly_rising, today_hard_worker
-import datetime
+from datetime import datetime, timezone, timedelta
 import os
 
 # 리더보드 데이터 생성
 data = build_leaderboard()
+KST = timezone(timedelta(hours=9))
 
 with ui.column().style("max-width:1300px;margin:auto"):
 
@@ -22,7 +23,7 @@ with ui.column().style("max-width:1300px;margin:auto"):
 
     with ui.row().style("width:100%;justify-content:flex-end"):
         last_update_label = ui.label(
-            f"Last update : {datetime.datetime.now().strftime('%H:%M:%S')}"
+            f"Last update : {datetime.now(KST).strftime('%H:%M:%S')}"
         ).style("color:gray;margin-bottom:10px")
 
     # TOP3
@@ -100,12 +101,6 @@ with ui.column().style("max-width:1300px;margin:auto"):
         {"name": "solved", "label": "Solved", "field": "solved", "align": "center"},
         {"name": "tier", "label": "Tier", "field": "tier", "align": "center"},
     ]
-
-    # table = ui.table(
-    #     columns=columns,
-    #     rows=data,
-    #     row_key="name"
-    # ).style("width:800px;margin:auto;font-size:18px")
 
     table = ui.table(
         columns=columns,
