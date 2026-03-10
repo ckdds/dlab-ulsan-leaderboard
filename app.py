@@ -287,4 +287,10 @@ def refresh():
 ui.timer(60, refresh, immediate=True)
 
 port = int(os.environ.get("PORT", 8080))
-ui.run(host="0.0.0.0", port=port)
+
+ui.run(
+    host="0.0.0.0",
+    port=port,
+    title="DLAB Algo Rank",
+    favicon="https://cdn-icons-png.flaticon.com/512/2583/2583344.png"
+)
