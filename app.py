@@ -280,7 +280,7 @@ def refresh():
 
     # 업데이트 시간
     last_update_label.set_text(
-        f"Last update : {datetime.now().strftime('%H:%M:%S')}"
+        f"Last update : {datetime.now(KST).strftime('%H:%M:%S')}"
     )
 
 
