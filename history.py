@@ -17,6 +17,20 @@ def save_history(data):
         json.dump(data, f, indent=2)
 
 
+def cleanup_history(history, keep_days=8):
+    dates = sorted(history.keys())
+
+    if len(dates) <= keep_days:
+        return history
+
+    old_dates = dates[:-keep_days]
+
+    for d in old_dates:
+        del history[d]
+
+    return history
+
+
 def update_today(data):
     history = load_history()
 
@@ -27,6 +41,8 @@ def update_today(data):
 
     for user in data:
         history[today][user["handle"]] = user["solved"]
+
+    history = cleanup_history(history, keep_days=8)
 
     save_history(history)
 
