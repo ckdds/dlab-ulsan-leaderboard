@@ -31,38 +31,6 @@ def update_today(data):
     save_history(history)
 
 
-# def weekly_rising(data):
-#     history = load_history()
-#
-#     if len(history) < 2:
-#         return []
-#
-#     dates = sorted(history.keys())
-#
-#     today = dates[-1]
-#     week = dates[0] if len(dates) < 7 else dates[-7]
-#
-#     rising = []
-#
-#     for user in data:
-#
-#         name = user["name"]
-#         now = user["solved"]
-#
-#         before = history.get(week, {}).get(name, now)
-#
-#         diff = now - before
-#
-#         rising.append({
-#             "name": name,
-#             "diff": diff
-#         })
-#
-#     rising.sort(key=lambda x: x["diff"], reverse=True)
-#
-#     return rising[:3]
-
-
 def weekly_rising(data):
 
     history = load_history()
