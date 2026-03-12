@@ -275,7 +275,7 @@ def refresh():
                 ui.label(f"{i+1}. {r['name']}").style("font-weight:bold")
 
                 ui.label(f"+{r['diff']} solved").style(
-                    "color:red;font-weight:bold"
+                    "color:green;font-weight:bold"
                 )
 
     # 업데이트 시간
