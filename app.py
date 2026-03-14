@@ -98,6 +98,7 @@ with ui.column().style("max-width:1300px;margin:auto"):
         {"name": "rank", "label": "Rank", "field": "rank", "align": "center"},
         {"name": "name", "label": "User", "field": "name", "align": "center"},
         {"name": "solved", "label": "Solved", "field": "solved", "align": "center"},
+        {"name": "rating", "label": "Rating", "field": "rating", "align": "center"},
         {"name": "tier", "label": "Tier", "field": "tier", "align": "center"},
     ]
 
@@ -113,6 +114,7 @@ with ui.column().style("max-width:1300px;margin:auto"):
     <th style="font-size:18px;text-align:center">순위</th>
     <th style="font-size:18px;text-align:center">아이디</th>
     <th style="font-size:18px;text-align:center">문제해결</th>
+    <th style="font-size:18px;text-align:center">Rating</th>
     <th style="font-size:18px;text-align:center">티어</th>
     </tr>
     ''')
