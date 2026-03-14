@@ -181,7 +181,7 @@ with ui.column().style("max-width:1300px;margin:auto"):
                 )
 
                 ui.label(f"+{r['diff']} solved").style(
-                    "color:red;font-weight:bold"
+                    "color:green;font-weight:bold"
                 )
 
 
@@ -248,7 +248,6 @@ def refresh():
     weekly_container.clear()
 
     rising = weekly_rising(new_data)
-
     with weekly_container:
         for i, r in enumerate(rising):
             with ui.card().style(

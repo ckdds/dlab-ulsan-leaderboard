@@ -26,7 +26,16 @@ def get_users(handles):
         result.append({
             "handle": user["handle"],
             "solved": user["solvedCount"],
-            "tier": user["tier"]
+            "tier": user["tier"],
+            "rating": user["rating"]
         })
 
     return result
+
+if __name__ == "__main__":
+    from students import students
+
+    users = get_users(students)
+
+    for i, user in enumerate(users, 1):
+        print(i, user)
