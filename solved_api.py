@@ -18,7 +18,6 @@ def get_users(handles):
         return []
 
     data = r.json()
-
     result = []
 
     for user in data:
@@ -37,5 +36,8 @@ if __name__ == "__main__":
 
     users = get_users(students)
 
-    for i, user in enumerate(users, 1):
-        print(i, user)
+    print(students)
+
+
+    # for i, user in enumerate(users, 1):
+    #     print(i, user)
