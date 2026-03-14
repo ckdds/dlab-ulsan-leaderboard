@@ -38,11 +38,11 @@ def render_top3(container, data):
                 ui.label(user["name"]).style("font-size:20px;font-weight:bold")
 
                 with ui.row().style("align-items:end;justify-content:center;gap:6px"):
-                    ui.label(str(user["solved"])).style(
-                        "font-size:36px;font-weight:800;color:#2563eb"
-                    )
-                    ui.label("solved").style(
+                    ui.label("Rating").style(
                         "font-size:17px;color:gray;margin-bottom:6px"
+                    )
+                    ui.label(str(user["rating"])).style(
+                        "font-size:36px;font-weight:800;color:#2563eb"
                     )
 
                 ui.html(user["tier_html"])
