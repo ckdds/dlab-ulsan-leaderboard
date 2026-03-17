@@ -1,11 +1,24 @@
-from nicegui import ui
+from nicegui import ui, app
 from leaderboard import build_leaderboard
 from history import weekly_rising, today_hard_worker
 from datetime import datetime, timezone, timedelta
+from fastapi.responses import FileResponse, PlainTextResponse
 import os
 
 KST = timezone(timedelta(hours=9))
+HISTORY_FILE = "history.json"
 
+
+@app.get('/download/history')
+def download_history():
+    if not os.path.exists(HISTORY_FILE):
+        return PlainTextResponse('history.json 파일이 없습니다.', status_code=404)
+
+    return FileResponse(
+        path=HISTORY_FILE,
+        filename='history.json',
+        media_type='application/json'
+    )
 
 def render_top3(container, data):
     container.clear()
@@ -77,6 +90,13 @@ with ui.column().style("max-width:1300px;margin:auto"):
     ui.separator()
 
     with ui.row().style("width:100%;justify-content:flex-end"):
+        ui.link(
+            '📥 history.json 다운로드',
+            '/download/history'
+        ).props('target=_blank').style(
+            "color:#2563eb;font-weight:bold;text-decoration:none"
+        )
+
         last_update_label = ui.label(
             f"Last update : {datetime.now(KST).strftime('%H:%M:%S')}"
         ).style("color:gray;margin-bottom:10px")
