@@ -16,6 +16,7 @@ students = [
     'yonusalis',
     'pmcozxcv',
     'minjungi_10',
-    'chl_dnjs'
+    'chl_dnjs',
+    'doyi2010'
 ]
 
