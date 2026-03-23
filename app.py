@@ -23,8 +23,17 @@ def download_history():
 def render_top3(container, data):
     container.clear()
 
+    if not data:
+        with container:
+            ui.label("TOP 3 데이터를 불러오지 못했습니다.").style("color:gray")
+        return
+
     with container:
-        top3 = [data[1], data[0], data[2]]
+        if len(data) < 3:
+            top3 = data
+        else:
+            top3 = [data[1], data[0], data[2]]
+        
         medals = ["🥈", "🥇", "🥉"]
 
         for i, user in enumerate(top3):
@@ -64,6 +73,11 @@ def render_top3(container, data):
 def render_rising(container, rising_data, title_type="solved"):
     container.clear()
 
+    if not rising_data:
+        with container:
+            ui.label("표시할 데이터가 없습니다.").style("color:gray")
+        return
+
     with container:
         for i, r in enumerate(rising_data):
             with ui.card().style(
@@ -75,8 +89,7 @@ def render_rising(container, rising_data, title_type="solved"):
                 )
 
 
-data = build_leaderboard()
-
+data = []
 with ui.column().style("max-width:1300px;margin:auto"):
     ui.label("🏆 DLAB 울산 알고리즘 리더보드").style("""
         font-size:40px;
@@ -145,7 +158,6 @@ with ui.column().style("max-width:1300px;margin:auto"):
     weekly_container = ui.row().style(
         "gap:40px;justify-content:center;margin-bottom:30px"
     )
-    render_rising(weekly_container, weekly_rising(data))
 
     ui.separator()
 
@@ -153,25 +165,41 @@ with ui.column().style("max-width:1300px;margin:auto"):
     today_container = ui.row().style(
         "gap:40px;justify-content:center;margin-bottom:30px"
     )
-    render_rising(today_container, today_hard_worker(data))
 
 
-def refresh():
-    new_data = build_leaderboard()
+def load_and_render():
+    try:
+        data = build_leaderboard()
+    except Exception as e:
+        print("build_leaderboard error:", e)
+        data = []
 
-    table.rows = new_data
+    table.rows = data
     table.update()
 
-    render_top3(top3_container, new_data)
-    render_rising(weekly_container, weekly_rising(new_data))
-    render_rising(today_container, today_hard_worker(new_data))
+    render_top3(top3_container, data)
+
+    try:
+        weekly_data = weekly_rising(data)
+    except Exception as e:
+        print("weekly_rising error:", e)
+        weekly_data = []
+
+    try:
+        today_data = today_hard_worker(data)
+    except Exception as e:
+        print("today_hard_worker error:", e)
+        today_data = []
+
+    render_rising(weekly_container, weekly_data)
+    render_rising(today_container, today_data)
 
     last_update_label.set_text(
         f"Last update : {datetime.now(KST).strftime('%H:%M:%S')}"
     )
 
 
-ui.timer(60, refresh, immediate=True)
+ui.timer(60, load_and_render, immediate=True)
 
 port = int(os.environ.get("PORT", 8080))
 
