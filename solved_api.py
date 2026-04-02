@@ -11,7 +11,7 @@ def get_users(handles):
         "User-Agent": "Mozilla/5.0"
     }
 
-    r = requests.get(url, headers=headers)
+    r = requests.get(url, headers=headers, timeout=2)
 
     if r.status_code != 200:
         print("API ERROR:", r.status_code)
