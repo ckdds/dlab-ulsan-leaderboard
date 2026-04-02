@@ -1,4 +1,4 @@
-from nicegui import ui, app
+from nicegui import ui, app, run
 from leaderboard import build_leaderboard
 from history import weekly_rising, today_hard_worker
 from datetime import datetime, timezone, timedelta
@@ -166,18 +166,12 @@ with ui.column().style("max-width:1300px;margin:auto"):
         "gap:40px;justify-content:center;margin-bottom:30px"
     )
 
-
-def load_and_render():
+def load_data():
     try:
         data = build_leaderboard()
     except Exception as e:
         print("build_leaderboard error:", e)
         data = []
-
-    table.rows = data
-    table.update()
-
-    render_top3(top3_container, data)
 
     try:
         weekly_data = weekly_rising(data)
@@ -191,13 +185,22 @@ def load_and_render():
         print("today_hard_worker error:", e)
         today_data = []
 
+    return data, weekly_data, today_data
+
+
+async def load_and_render():
+    data, weekly_data, today_data = await run.io_bound(load_data)
+
+    table.rows = data
+    table.update()
+
+    render_top3(top3_container, data)
     render_rising(weekly_container, weekly_data)
     render_rising(today_container, today_data)
 
     last_update_label.set_text(
         f"Last update : {datetime.now(KST).strftime('%H:%M:%S')}"
     )
-
 
 ui.timer(60, load_and_render, immediate=True)
 
