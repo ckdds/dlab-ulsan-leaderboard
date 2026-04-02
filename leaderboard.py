@@ -5,13 +5,11 @@ from history import update_today
 
 
 def build_leaderboard():
-
     users = get_users(students)
 
     data = []
 
     for user in users:
-
         data.append({
             "name": user["handle"],
             "solved": user["solved"],
@@ -25,9 +23,10 @@ def build_leaderboard():
     for i, d in enumerate(data):
         d["rank"] = i + 1
 
-    update_today(users)
+    update_today(data)
 
     return data
+
 
 if __name__ == "__main__":
     leaderboard = build_leaderboard()
