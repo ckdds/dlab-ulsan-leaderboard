@@ -315,22 +315,36 @@ def load_data():
 
     return data, weekly_data, today_data
 
-
+import traceback
+is_running = False
 async def load_and_render():
-    print('load_and_render start')
-    data, weekly_data, today_data = await run.io_bound(load_data)
+    global is_running
 
-    table.rows = data
-    table.update()
+    if is_running:
+        print('skip: still running', flush=True)
+        return
 
-    render_top3(top3_container, data)
-    render_rising(weekly_container, weekly_data)
-    render_rising(today_container, today_data)
+    is_running = True
 
-    last_update_label.set_text(
-        f"Last update : {datetime.now(KST).strftime('%H:%M:%S')}"
-    )
-    print('load_and_render end')
+    try :
+        data, weekly_data, today_data = await run.io_bound(load_data)
+
+        table.rows = data
+        table.update()
+
+        render_top3(top3_container, data)
+        render_rising(weekly_container, weekly_data)
+        render_rising(today_container, today_data)
+
+        last_update_label.set_text(
+            f"Last update : {datetime.now(KST).strftime('%H:%M:%S')}"
+        )
+    except Exception:
+        print('load_and_render error', flush=True)
+        traceback.print_exc()
+    finally:
+        is_running = False
+
 
 ui.timer(60, load_and_render, immediate=True)
 
