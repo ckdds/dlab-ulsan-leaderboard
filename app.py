@@ -181,15 +181,6 @@ with ui.column().style("max-width:1300px;margin:auto;"):
             margin:0;
         """)
 
-    # ui.label("🏆 DLAB 울산 알고리즘 리더보드").style("""
-    #     font-size:40px;
-    #     font-weight:bold;
-    #     text-align:center;
-    #     width:100%;
-    #     margin-top:30px;
-    #     margin-bottom:5px
-    # """)
-
     ui.separator()
 
     with ui.row().style("width:100%;justify-content:flex-end"):
@@ -326,6 +317,7 @@ def load_data():
 
 
 async def load_and_render():
+    print('load_and_render start')
     data, weekly_data, today_data = await run.io_bound(load_data)
 
     table.rows = data
@@ -338,6 +330,7 @@ async def load_and_render():
     last_update_label.set_text(
         f"Last update : {datetime.now(KST).strftime('%H:%M:%S')}"
     )
+    print('load_and_render end')
 
 ui.timer(60, load_and_render, immediate=True)
 
