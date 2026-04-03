@@ -5,6 +5,8 @@ from datetime import datetime, timezone, timedelta
 from fastapi.responses import FileResponse, PlainTextResponse
 import os
 
+app.add_static_files('/static', 'static')
+
 KST = timezone(timedelta(hours=9))
 HISTORY_FILE = "history.json"
 
@@ -157,7 +159,7 @@ def rating_with_diff(rating, diff):
 
 data = []
 
-with ui.column().style("max-width:1300px;margin:auto;"):
+with ui.column().style("max-width:1300px;margin:40px auto 0 auto;"):
     with ui.row().style("""
         width:100%;
         justify-content:center;
@@ -165,7 +167,7 @@ with ui.column().style("max-width:1300px;margin:auto;"):
         gap:14px;
         margin:20px auto 20px auto;
     """):
-        ui.image('logo.png').style("""
+        ui.image('/static/logo.png').style("""
             width:160px;
             height:auto;
             display:block;
@@ -354,5 +356,5 @@ ui.run(
     host="0.0.0.0",
     port=port,
     title="DLAB Algo Rank",
-    favicon='static/favicon.png'
+    favicon='/static/favicon.png'
 )
