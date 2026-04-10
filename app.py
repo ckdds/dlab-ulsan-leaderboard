@@ -356,5 +356,5 @@ ui.run(
     host="0.0.0.0",
     port=port,
     title="DLAB Algo Rank",
-    favicon='/static/favicon.png'
+    favicon='static/favicon.png'
 )
