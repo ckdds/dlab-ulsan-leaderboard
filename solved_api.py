@@ -36,8 +36,8 @@ if __name__ == "__main__":
 
     users = get_users(students)
 
-    print(students)
+    # print(students)
 
 
-    # for i, user in enumerate(users, 1):
-    #     print(i, user)
+    for i, user in enumerate(users, 1):
+        print(i, user)
