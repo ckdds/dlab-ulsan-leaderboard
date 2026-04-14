@@ -348,7 +348,7 @@ async def load_and_render():
         is_running = False
 
 
-# ui.timer(60, load_and_render, immediate=True)
+ui.timer(60, load_and_render, immediate=True)
 
 port = int(os.environ.get("PORT", 8080))
 
