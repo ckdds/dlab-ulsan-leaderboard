@@ -29,8 +29,8 @@ playwright 새 브라우저 ❌
 로그인 / 쿠키 / Cloudflare 통과 상태 그대로 사용
 👉 사람처럼 보임
 
-1. 크롬실행
-chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\chrome_debug"
+1. 크롬실행 (Ctrl + R)
+chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\chrome_debug
 
 2. 그 크롬에서 solved.ac 열기
 
