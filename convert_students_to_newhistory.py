@@ -4,7 +4,7 @@ from datetime import datetime, timezone, timedelta
 
 '''
 학생 데이터 수동 업데이트 하는 프로그램
-solved_api_login_test.py 파일 실행 결과를 기존 시스템에 맞게 newhistory.json 파일로 만드는 과정
+solved_api_login_test.py 파일 실행 결과를 기존 시스템에 맞게 history.json 파일에 업데이트
 '''
 
 STUDENTS_FILE = "students.json"
