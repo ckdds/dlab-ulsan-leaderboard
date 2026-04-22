@@ -1,392 +1,4 @@
 {
-  "2026-04-11": {
-    "bori_12": {
-      "solved": 165,
-      "rating": 880,
-      "rank": 1
-    },
-    "rem_maji_tenshi": {
-      "solved": 176,
-      "rating": 837,
-      "rank": 2
-    },
-    "happy_rabbit": {
-      "solved": 201,
-      "rating": 825,
-      "rank": 3
-    },
-    "doyi2010": {
-      "solved": 145,
-      "rating": 757,
-      "rank": 4
-    },
-    "jason0112": {
-      "solved": 156,
-      "rating": 734,
-      "rank": 5
-    },
-    "wsy8789": {
-      "solved": 124,
-      "rating": 613,
-      "rank": 6
-    },
-    "pmcozxcv": {
-      "solved": 141,
-      "rating": 612,
-      "rank": 7
-    },
-    "firetmxk_123": {
-      "solved": 108,
-      "rating": 562,
-      "rank": 8
-    },
-    "chl_dnjs": {
-      "solved": 101,
-      "rating": 521,
-      "rank": 9
-    },
-    "melodykim": {
-      "solved": 113,
-      "rating": 418,
-      "rank": 10
-    },
-    "tangblyty": {
-      "solved": 83,
-      "rating": 378,
-      "rank": 11
-    },
-    "junseong_kim": {
-      "solved": 77,
-      "rating": 353,
-      "rank": 12
-    },
-    "min_tainumone": {
-      "solved": 81,
-      "rating": 325,
-      "rank": 13
-    },
-    "yonusalis": {
-      "solved": 74,
-      "rating": 322,
-      "rank": 14
-    },
-    "yejun1223": {
-      "solved": 65,
-      "rating": 271,
-      "rank": 15
-    },
-    "bshbsh0424": {
-      "solved": 59,
-      "rating": 211,
-      "rank": 16
-    },
-    "minjungi_10": {
-      "solved": 48,
-      "rating": 185,
-      "rank": 17
-    },
-    "superspider1158": {
-      "solved": 46,
-      "rating": 163,
-      "rank": 18
-    },
-    "speedgldsos": {
-      "solved": 46,
-      "rating": 161,
-      "rank": 19
-    }
-  },
-  "2026-04-12": {
-    "bori_12": {
-      "solved": 165,
-      "rating": 880,
-      "rank": 1
-    },
-    "happy_rabbit": {
-      "solved": 208,
-      "rating": 861,
-      "rank": 2
-    },
-    "rem_maji_tenshi": {
-      "solved": 176,
-      "rating": 837,
-      "rank": 3
-    },
-    "doyi2010": {
-      "solved": 145,
-      "rating": 757,
-      "rank": 4
-    },
-    "jason0112": {
-      "solved": 156,
-      "rating": 734,
-      "rank": 5
-    },
-    "pmcozxcv": {
-      "solved": 145,
-      "rating": 639,
-      "rank": 6
-    },
-    "wsy8789": {
-      "solved": 127,
-      "rating": 631,
-      "rank": 7
-    },
-    "firetmxk_123": {
-      "solved": 108,
-      "rating": 562,
-      "rank": 8
-    },
-    "chl_dnjs": {
-      "solved": 101,
-      "rating": 521,
-      "rank": 9
-    },
-    "melodykim": {
-      "solved": 113,
-      "rating": 418,
-      "rank": 10
-    },
-    "tangblyty": {
-      "solved": 83,
-      "rating": 378,
-      "rank": 11
-    },
-    "junseong_kim": {
-      "solved": 77,
-      "rating": 353,
-      "rank": 12
-    },
-    "min_tainumone": {
-      "solved": 82,
-      "rating": 333,
-      "rank": 13
-    },
-    "yonusalis": {
-      "solved": 74,
-      "rating": 322,
-      "rank": 14
-    },
-    "yejun1223": {
-      "solved": 68,
-      "rating": 294,
-      "rank": 15
-    },
-    "bshbsh0424": {
-      "solved": 63,
-      "rating": 225,
-      "rank": 16
-    },
-    "minjungi_10": {
-      "solved": 48,
-      "rating": 185,
-      "rank": 17
-    },
-    "superspider1158": {
-      "solved": 46,
-      "rating": 163,
-      "rank": 18
-    },
-    "speedgldsos": {
-      "solved": 46,
-      "rating": 161,
-      "rank": 19
-    }
-  },
-  "2026-04-13": {
-    "bori_12": {
-      "solved": 165,
-      "rating": 880,
-      "rank": 1
-    },
-    "happy_rabbit": {
-      "solved": 208,
-      "rating": 861,
-      "rank": 2
-    },
-    "rem_maji_tenshi": {
-      "solved": 176,
-      "rating": 837,
-      "rank": 3
-    },
-    "doyi2010": {
-      "solved": 145,
-      "rating": 757,
-      "rank": 4
-    },
-    "jason0112": {
-      "solved": 156,
-      "rating": 734,
-      "rank": 5
-    },
-    "pmcozxcv": {
-      "solved": 145,
-      "rating": 639,
-      "rank": 6
-    },
-    "wsy8789": {
-      "solved": 127,
-      "rating": 631,
-      "rank": 7
-    },
-    "firetmxk_123": {
-      "solved": 108,
-      "rating": 562,
-      "rank": 8
-    },
-    "chl_dnjs": {
-      "solved": 101,
-      "rating": 521,
-      "rank": 9
-    },
-    "melodykim": {
-      "solved": 113,
-      "rating": 418,
-      "rank": 10
-    },
-    "tangblyty": {
-      "solved": 83,
-      "rating": 378,
-      "rank": 11
-    },
-    "junseong_kim": {
-      "solved": 77,
-      "rating": 353,
-      "rank": 12
-    },
-    "min_tainumone": {
-      "solved": 82,
-      "rating": 333,
-      "rank": 13
-    },
-    "yonusalis": {
-      "solved": 74,
-      "rating": 322,
-      "rank": 14
-    },
-    "yejun1223": {
-      "solved": 68,
-      "rating": 294,
-      "rank": 15
-    },
-    "bshbsh0424": {
-      "solved": 63,
-      "rating": 225,
-      "rank": 16
-    },
-    "minjungi_10": {
-      "solved": 48,
-      "rating": 185,
-      "rank": 17
-    },
-    "superspider1158": {
-      "solved": 46,
-      "rating": 163,
-      "rank": 18
-    },
-    "speedgldsos": {
-      "solved": 46,
-      "rating": 161,
-      "rank": 19
-    }
-  },
-  "2026-04-14": {
-    "bori_12": {
-      "solved": 165,
-      "rating": 880,
-      "rank": 1
-    },
-    "happy_rabbit": {
-      "solved": 208,
-      "rating": 861,
-      "rank": 2
-    },
-    "rem_maji_tenshi": {
-      "solved": 176,
-      "rating": 837,
-      "rank": 3
-    },
-    "doyi2010": {
-      "solved": 145,
-      "rating": 757,
-      "rank": 4
-    },
-    "jason0112": {
-      "solved": 156,
-      "rating": 734,
-      "rank": 5
-    },
-    "pmcozxcv": {
-      "solved": 145,
-      "rating": 639,
-      "rank": 6
-    },
-    "wsy8789": {
-      "solved": 127,
-      "rating": 631,
-      "rank": 7
-    },
-    "firetmxk_123": {
-      "solved": 108,
-      "rating": 562,
-      "rank": 8
-    },
-    "chl_dnjs": {
-      "solved": 101,
-      "rating": 521,
-      "rank": 9
-    },
-    "melodykim": {
-      "solved": 113,
-      "rating": 418,
-      "rank": 10
-    },
-    "tangblyty": {
-      "solved": 83,
-      "rating": 378,
-      "rank": 11
-    },
-    "junseong_kim": {
-      "solved": 77,
-      "rating": 353,
-      "rank": 12
-    },
-    "min_tainumone": {
-      "solved": 82,
-      "rating": 333,
-      "rank": 13
-    },
-    "yonusalis": {
-      "solved": 74,
-      "rating": 322,
-      "rank": 14
-    },
-    "yejun1223": {
-      "solved": 68,
-      "rating": 294,
-      "rank": 15
-    },
-    "bshbsh0424": {
-      "solved": 63,
-      "rating": 225,
-      "rank": 16
-    },
-    "minjungi_10": {
-      "solved": 48,
-      "rating": 185,
-      "rank": 17
-    },
-    "superspider1158": {
-      "solved": 46,
-      "rating": 163,
-      "rank": 18
-    },
-    "speedgldsos": {
-      "solved": 46,
-      "rating": 161,
-      "rank": 19
-    }
-  },
   "2026-04-15": {
     "bori_12": {
       "solved": 165,
@@ -679,6 +291,394 @@
     }
   },
   "2026-04-18": {
+    "bori_12": {
+      "solved": 166,
+      "rating": 881,
+      "rank": 1
+    },
+    "happy_rabbit": {
+      "solved": 208,
+      "rating": 861,
+      "rank": 2
+    },
+    "rem_maji_tenshi": {
+      "solved": 176,
+      "rating": 837,
+      "rank": 3
+    },
+    "doyi2010": {
+      "solved": 145,
+      "rating": 757,
+      "rank": 4
+    },
+    "jason0112": {
+      "solved": 157,
+      "rating": 735,
+      "rank": 5
+    },
+    "pmcozxcv": {
+      "solved": 145,
+      "rating": 639,
+      "rank": 6
+    },
+    "wsy8789": {
+      "solved": 127,
+      "rating": 631,
+      "rank": 7
+    },
+    "firetmxk_123": {
+      "solved": 108,
+      "rating": 562,
+      "rank": 8
+    },
+    "chl_dnjs": {
+      "solved": 101,
+      "rating": 521,
+      "rank": 9
+    },
+    "melodykim": {
+      "solved": 113,
+      "rating": 418,
+      "rank": 10
+    },
+    "tangblyty": {
+      "solved": 83,
+      "rating": 378,
+      "rank": 11
+    },
+    "junseong_kim": {
+      "solved": 77,
+      "rating": 353,
+      "rank": 12
+    },
+    "min_tainumone": {
+      "solved": 82,
+      "rating": 333,
+      "rank": 13
+    },
+    "yonusalis": {
+      "solved": 74,
+      "rating": 322,
+      "rank": 14
+    },
+    "yejun1223": {
+      "solved": 68,
+      "rating": 294,
+      "rank": 15
+    },
+    "bshbsh0424": {
+      "solved": 63,
+      "rating": 225,
+      "rank": 16
+    },
+    "minjungi_10": {
+      "solved": 48,
+      "rating": 185,
+      "rank": 17
+    },
+    "superspider1158": {
+      "solved": 46,
+      "rating": 163,
+      "rank": 18
+    },
+    "speedgldsos": {
+      "solved": 46,
+      "rating": 161,
+      "rank": 19
+    }
+  },
+  "2026-04-19": {
+    "bori_12": {
+      "solved": 166,
+      "rating": 881,
+      "rank": 1
+    },
+    "happy_rabbit": {
+      "solved": 208,
+      "rating": 861,
+      "rank": 2
+    },
+    "rem_maji_tenshi": {
+      "solved": 176,
+      "rating": 837,
+      "rank": 3
+    },
+    "doyi2010": {
+      "solved": 145,
+      "rating": 757,
+      "rank": 4
+    },
+    "jason0112": {
+      "solved": 157,
+      "rating": 735,
+      "rank": 5
+    },
+    "pmcozxcv": {
+      "solved": 145,
+      "rating": 639,
+      "rank": 6
+    },
+    "wsy8789": {
+      "solved": 127,
+      "rating": 631,
+      "rank": 7
+    },
+    "firetmxk_123": {
+      "solved": 108,
+      "rating": 562,
+      "rank": 8
+    },
+    "chl_dnjs": {
+      "solved": 101,
+      "rating": 521,
+      "rank": 9
+    },
+    "melodykim": {
+      "solved": 113,
+      "rating": 418,
+      "rank": 10
+    },
+    "tangblyty": {
+      "solved": 83,
+      "rating": 378,
+      "rank": 11
+    },
+    "junseong_kim": {
+      "solved": 77,
+      "rating": 353,
+      "rank": 12
+    },
+    "min_tainumone": {
+      "solved": 82,
+      "rating": 333,
+      "rank": 13
+    },
+    "yonusalis": {
+      "solved": 74,
+      "rating": 322,
+      "rank": 14
+    },
+    "yejun1223": {
+      "solved": 68,
+      "rating": 294,
+      "rank": 15
+    },
+    "bshbsh0424": {
+      "solved": 63,
+      "rating": 225,
+      "rank": 16
+    },
+    "minjungi_10": {
+      "solved": 48,
+      "rating": 185,
+      "rank": 17
+    },
+    "superspider1158": {
+      "solved": 46,
+      "rating": 163,
+      "rank": 18
+    },
+    "speedgldsos": {
+      "solved": 46,
+      "rating": 161,
+      "rank": 19
+    }
+  },
+  "2026-04-20": {
+    "bori_12": {
+      "solved": 166,
+      "rating": 881,
+      "rank": 1
+    },
+    "happy_rabbit": {
+      "solved": 208,
+      "rating": 861,
+      "rank": 2
+    },
+    "rem_maji_tenshi": {
+      "solved": 176,
+      "rating": 837,
+      "rank": 3
+    },
+    "doyi2010": {
+      "solved": 145,
+      "rating": 757,
+      "rank": 4
+    },
+    "jason0112": {
+      "solved": 157,
+      "rating": 735,
+      "rank": 5
+    },
+    "pmcozxcv": {
+      "solved": 145,
+      "rating": 639,
+      "rank": 6
+    },
+    "wsy8789": {
+      "solved": 127,
+      "rating": 631,
+      "rank": 7
+    },
+    "firetmxk_123": {
+      "solved": 108,
+      "rating": 562,
+      "rank": 8
+    },
+    "chl_dnjs": {
+      "solved": 101,
+      "rating": 521,
+      "rank": 9
+    },
+    "melodykim": {
+      "solved": 113,
+      "rating": 418,
+      "rank": 10
+    },
+    "tangblyty": {
+      "solved": 83,
+      "rating": 378,
+      "rank": 11
+    },
+    "junseong_kim": {
+      "solved": 77,
+      "rating": 353,
+      "rank": 12
+    },
+    "min_tainumone": {
+      "solved": 82,
+      "rating": 333,
+      "rank": 13
+    },
+    "yonusalis": {
+      "solved": 74,
+      "rating": 322,
+      "rank": 14
+    },
+    "yejun1223": {
+      "solved": 68,
+      "rating": 294,
+      "rank": 15
+    },
+    "bshbsh0424": {
+      "solved": 63,
+      "rating": 225,
+      "rank": 16
+    },
+    "minjungi_10": {
+      "solved": 48,
+      "rating": 185,
+      "rank": 17
+    },
+    "superspider1158": {
+      "solved": 46,
+      "rating": 163,
+      "rank": 18
+    },
+    "speedgldsos": {
+      "solved": 46,
+      "rating": 161,
+      "rank": 19
+    }
+  },
+  "2026-04-21": {
+    "bori_12": {
+      "solved": 166,
+      "rating": 881,
+      "rank": 1
+    },
+    "happy_rabbit": {
+      "solved": 208,
+      "rating": 861,
+      "rank": 2
+    },
+    "rem_maji_tenshi": {
+      "solved": 176,
+      "rating": 837,
+      "rank": 3
+    },
+    "doyi2010": {
+      "solved": 145,
+      "rating": 757,
+      "rank": 4
+    },
+    "jason0112": {
+      "solved": 157,
+      "rating": 735,
+      "rank": 5
+    },
+    "pmcozxcv": {
+      "solved": 145,
+      "rating": 639,
+      "rank": 6
+    },
+    "wsy8789": {
+      "solved": 127,
+      "rating": 631,
+      "rank": 7
+    },
+    "firetmxk_123": {
+      "solved": 108,
+      "rating": 562,
+      "rank": 8
+    },
+    "chl_dnjs": {
+      "solved": 101,
+      "rating": 521,
+      "rank": 9
+    },
+    "melodykim": {
+      "solved": 113,
+      "rating": 418,
+      "rank": 10
+    },
+    "tangblyty": {
+      "solved": 83,
+      "rating": 378,
+      "rank": 11
+    },
+    "junseong_kim": {
+      "solved": 77,
+      "rating": 353,
+      "rank": 12
+    },
+    "min_tainumone": {
+      "solved": 82,
+      "rating": 333,
+      "rank": 13
+    },
+    "yonusalis": {
+      "solved": 74,
+      "rating": 322,
+      "rank": 14
+    },
+    "yejun1223": {
+      "solved": 68,
+      "rating": 294,
+      "rank": 15
+    },
+    "bshbsh0424": {
+      "solved": 63,
+      "rating": 225,
+      "rank": 16
+    },
+    "minjungi_10": {
+      "solved": 48,
+      "rating": 185,
+      "rank": 17
+    },
+    "superspider1158": {
+      "solved": 46,
+      "rating": 163,
+      "rank": 18
+    },
+    "speedgldsos": {
+      "solved": 46,
+      "rating": 161,
+      "rank": 19
+    }
+  },
+  "2026-04-22": {
     "bori_12": {
       "solved": 166,
       "rating": 881,
